@@ -1,0 +1,37 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Meta, title, CSS, favicons, etc. -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>{% block title %} {% endblock %}</title>
+	
+	<!-- Styles -->
+	<link rel='stylesheet' href=" {% static 'assets/css/bootstrap.min.css' %}">
+	<link rel='stylesheet' href=" {% static 'assets/css/animate.min.css' %}">
+	<link rel='stylesheet' href=" {% static 'assets/css/font-awesome.min.css' %}"/>
+	<link rel='stylesheet' href=" {% static 'assets/css/style.css' %}"/>
+	
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    {% block content %}
+
+    	
+	<link rel="shortcut icon" href="#">
+    {% endblock %}
+
+
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.scrollTo.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.localScroll.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- <script src="{% static 'assets/js/validate.js' %}"></script> -->
+    <script src="{% static 'assets/js/common.js' %}"></script>
+</head>
+
+</html>
